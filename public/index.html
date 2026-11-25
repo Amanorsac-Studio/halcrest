@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Halcrest Group LLC | Technology and Creative Services, Charlottesville, Virginia</title>
+<meta name="description" content="Halcrest Group LLC is a Virginia small business in Charlottesville providing custom software, websites, mobile apps, IT support, and professional audio, video and AV services to government agencies, businesses and organizations.">
+<meta name="theme-color" content="#0E2A24">
+<link rel="canonical" href="https://halcrestllc.com/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Halcrest Group LLC">
+<meta property="og:title" content="Halcrest Group LLC">
+<meta property="og:description" content="Technology and creative services for government agencies, businesses and organizations. Charlottesville, Virginia.">
+<meta property="og:url" content="https://halcrestllc.com/">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preload" href="fonts/inter-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Halcrest Group LLC",
+  "url": "https://halcrestllc.com/",
+  "description": "Technology and creative services: custom software, websites, mobile apps, IT support, and audio, video, music and AV production.",
+  "address": { "@type": "PostalAddress", "addressLocality": "Charlottesville", "addressRegion": "VA", "addressCountry": "US" },
+  "areaServed": "US",
+  "email": "info@halcrestllc.com"
+}
+</script>
+<style>
+@font-face{font-family:'Inter';font-weight:400;font-style:normal;font-display:swap;src:url(fonts/inter-latin-400-normal.woff2) format('woff2')}
+@font-face{font-family:'Inter';font-weight:500;font-style:normal;font-display:swap;src:url(fonts/inter-latin-500-normal.woff2) format('woff2')}
+@font-face{font-family:'Inter';font-weight:600;font-style:normal;font-display:swap;src:url(fonts/inter-latin-600-normal.woff2) format('woff2')}
+
+:root{
+  --pine:#0E2A24;      /* primary dark */
+  --pine-800:#163A32;
+  --pine-700:#21493F;
+  --brass:#C9A45C;     /* accent on dark */
+  --brass-ink:#7A5A1C; /* accent text on light */
+  --stone:#F3F0E8;     /* light section */
+  --paper:#FAF8F3;     /* page */
+  --ink:#16201D;
+  --muted:#4F5C57;
+  --on-dark:#EEF1EC;
+  --on-dark-muted:rgba(238,241,236,.74);
+  --line:rgba(14,42,36,.12);
+  --line-dark:rgba(201,164,92,.22);
+  --radius:6px;
+  --font:'Inter','Segoe UI',system-ui,-apple-system,sans-serif;
+  --wrap:1120px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;font-family:var(--font);font-size:17px;line-height:1.65;color:var(--ink);background:var(--paper);-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-weight:600;line-height:1.15;letter-spacing:-.02em;margin:0}
+p{margin:0}
+a{color:inherit}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 24px}
+.skip{position:absolute;left:-999px;top:8px;background:var(--brass);color:var(--pine);padding:8px 14px;border-radius:4px;z-index:10}
+.skip:focus{left:12px}
+:focus-visible{outline:2px solid var(--brass);outline-offset:3px}
+
+/* Header */
+header{position:sticky;top:0;z-index:5;background:rgba(14,42,36,.96);backdrop-filter:saturate(140%) blur(8px);border-bottom:1px solid var(--line-dark)}
+.bar{display:flex;align-items:center;justify-content:space-between;height:68px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--on-dark)}
+.brand svg{width:30px;height:30px;flex:none}
+.brand-name{font-weight:600;letter-spacing:.22em;font-size:15px;text-transform:uppercase}
+.brand-name span{color:var(--brass);font-weight:500;letter-spacing:.16em;margin-left:.35em}
+nav ul{list-style:none;display:flex;gap:28px;margin:0;padding:0}
+nav a{text-decoration:none;color:var(--on-dark-muted);font-size:15px;font-weight:500}
+nav a:hover{color:var(--on-dark)}
+@media (max-width:640px){nav{display:none}}
+
+/* Hero */
+.hero{background:var(--pine);color:var(--on-dark);position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background:
+  radial-gradient(900px 420px at 85% 10%,rgba(201,164,92,.13),transparent 60%),
+  radial-gradient(700px 500px at 0% 100%,rgba(33,73,63,.9),transparent 70%)}
+.hero .ridge{position:absolute;right:-40px;bottom:-2px;width:min(720px,80%);opacity:.5;pointer-events:none}
+.hero .wrap{position:relative;padding-top:104px;padding-bottom:112px}
+.eyebrow{font-size:13px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--brass)}
+.hero h1{font-size:clamp(36px,5.4vw,60px);max-width:16ch;margin-top:18px}
+.hero .lead{font-size:clamp(18px,2vw,20px);color:var(--on-dark-muted);max-width:56ch;margin-top:22px}
+.actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:36px}
+.btn{display:inline-block;text-decoration:none;font-weight:600;font-size:15px;padding:13px 22px;border-radius:var(--radius);border:1px solid transparent}
+.btn-primary{background:var(--brass);color:var(--pine)}
+.btn-primary:hover{background:#D8B670}
+.btn-ghost{border-color:rgba(238,241,236,.35);color:var(--on-dark)}
+.btn-ghost:hover{border-color:var(--on-dark)}
+.facts{display:flex;flex-wrap:wrap;gap:12px 36px;margin-top:64px;padding-top:28px;border-top:1px solid var(--line-dark);font-size:14px;color:var(--on-dark-muted)}
+.facts strong{display:block;color:var(--on-dark);font-weight:600;font-size:15px}
+
+/* Sections */
+section{padding:96px 0}
+.head{max-width:680px;margin-bottom:48px}
+.head .eyebrow{color:var(--brass-ink)}
+.head h2{font-size:clamp(28px,3.4vw,40px);margin-top:12px}
+.head p{color:var(--muted);margin-top:14px}
+
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+@media (max-width:900px){.grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:600px){.grid{grid-template-columns:1fr}}
+.card{background:#fff;border:1px solid var(--line);border-radius:10px;padding:28px}
+.card .ico{width:44px;height:44px;border-radius:8px;background:var(--pine);display:grid;place-items:center;margin-bottom:20px}
+.card .ico svg{width:22px;height:22px;stroke:var(--brass);fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.card h3{font-size:19px}
+.card p{color:var(--muted);font-size:16px;margin-top:10px}
+
+.about{background:var(--stone)}
+.split{display:grid;grid-template-columns:1.25fr 1fr;gap:64px;align-items:start}
+@media (max-width:860px){.split{grid-template-columns:1fr;gap:40px}}
+.about .copy p{font-size:18px;color:var(--ink)}
+.about .copy p + p{margin-top:18px;color:var(--muted);font-size:17px}
+.profile{background:var(--pine);color:var(--on-dark);border-radius:10px;padding:32px}
+.profile h3{font-size:14px;letter-spacing:.16em;text-transform:uppercase;color:var(--brass);font-weight:600}
+.profile dl{margin:20px 0 0}
+.profile div{display:flex;justify-content:space-between;gap:20px;padding:13px 0;border-top:1px solid var(--line-dark);font-size:15px}
+.profile dt{color:var(--on-dark-muted)}
+.profile dd{margin:0;text-align:right;font-weight:500}
+
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;counter-reset:s}
+@media (max-width:900px){.steps{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:560px){.steps{grid-template-columns:1fr}}
+.step{border-top:2px solid var(--pine);padding-top:18px}
+.step h3{font-size:18px}
+.step p{color:var(--muted);font-size:16px;margin-top:8px}
+
+.contact{background:var(--pine);color:var(--on-dark)}
+.contact .head .eyebrow{color:var(--brass)}
+.contact .head p{color:var(--on-dark-muted)}
+.contact-box{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+@media (max-width:760px){.contact-box{grid-template-columns:1fr}}
+.contact-box div{border:1px solid var(--line-dark);border-radius:10px;padding:24px}
+.contact-box span{display:block;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--brass);font-weight:600}
+.contact-box p{margin-top:8px;font-size:17px}
+.contact-box a{text-decoration:none;border-bottom:1px solid var(--brass)}
+
+footer{background:#0A201B;color:var(--on-dark-muted);font-size:14px;padding:28px 0}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header>
+  <div class="wrap bar">
+    <a class="brand" href="#top" aria-label="Halcrest Group, home">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 2 29 9v8c0 7-5.6 11.6-13 13C8.6 28.6 3 24 3 17V9z" fill="#163A32" stroke="#C9A45C" stroke-width="1.4"/><path d="M8 21l5-7 3 4 2.5-3.5L24 21z" fill="#C9A45C"/></svg>
+      <span class="brand-name">Halcrest<span>Group</span></span>
+    </a>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#approach">Approach</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" id="top" aria-labelledby="hero-title" style="padding:0">
+    <svg class="ridge" viewBox="0 0 720 260" aria-hidden="true"><path d="M0 260 150 120l70 70 120-150 110 120 60-50 210 150z" fill="#163A32"/><path d="M340 40 450 160l60-50" fill="none" stroke="#C9A45C" stroke-width="1.5" opacity=".6"/></svg>
+    <div class="wrap">
+      <p class="eyebrow">Halcrest Group LLC &middot; Charlottesville, Virginia</p>
+      <h1 id="hero-title">Technology and creative services, delivered reliably.</h1>
+      <p class="lead">We build software, websites and mobile apps, provide IT support, and produce professional audio, video and live event AV for government agencies, businesses and organizations.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="#contact">Request a quote</a>
+        <a class="btn btn-ghost" href="#services">Our services</a>
+      </div>
+      <div class="facts">
+        <p><strong>Virginia LLC</strong>Small business</p>
+        <p><strong>Charlottesville, VA</strong>Central Virginia</p>
+        <p><strong>Public &amp; private sector</strong>Direct contracts and public bids</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" aria-labelledby="services-title">
+    <div class="wrap">
+      <div class="head">
+        <p class="eyebrow">What we do</p>
+        <h2 id="services-title">Services</h2>
+        <p>One accountable team for the technology and media work organizations depend on.</p>
+      </div>
+      <div class="grid">
+        <article class="card">
+          <div class="ico"><svg viewBox="0 0 24 24"><path d="M8 7 3 12l5 5M16 7l5 5-5 5M14 4l-4 16"/></svg></div>
+          <h3>Custom software</h3>
+          <p>Business systems, internal tools and integrations designed around how your organization actually works.</p>
+        </article>
+        <article class="card">
+          <div class="ico"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>
+          <h3>Websites &amp; mobile apps</h3>
+          <p>Fast, accessible websites and iOS and Android apps, from first design through launch and upkeep.</p>
+        </article>
+        <article class="card">
+          <div class="ico"><svg viewBox="0 0 24 24"><path d="M12 3 4 6v6c0 5 3.4 8.3 8 9 4.6-.7 8-4 8-9V6z"/><path d="m9 12 2 2 4-4"/></svg></div>
+          <h3>IT support</h3>
+          <p>Setup, maintenance and troubleshooting for devices, networks, accounts and cloud services.</p>
+        </article>
+        <article class="card">
+          <div class="ico"><svg viewBox="0 0 24 24"><path d="M9 18V5l11-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="17" cy="16" r="3"/></svg></div>
+          <h3>Audio &amp; music production</h3>
+          <p>Recording, mixing and mastering, music production, voiceover and sound for media and campaigns.</p>
+        </article>
+        <article class="card">
+          <div class="ico"><svg viewBox="0 0 24 24"><rect x="3" y="6" width="13" height="12" rx="2"/><path d="m16 10 5-3v10l-5-3"/></svg></div>
+          <h3>Video production</h3>
+          <p>Filming, editing and post-production for promotional, training and event video.</p>
+        </article>
+        <article class="card">
+          <div class="ico"><svg viewBox="0 0 24 24"><path d="M4 10v4M8 7v10M12 4v16M16 7v10M20 10v4"/></svg></div>
+          <h3>Live sound &amp; AV</h3>
+          <p>Audiovisual setup and operation for events, services, meetings and conferences.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about" aria-labelledby="about-title">
+    <div class="wrap split">
+      <div>
+        <div class="head" style="margin-bottom:28px">
+          <p class="eyebrow">About us</p>
+          <h2 id="about-title">A Charlottesville small business built on dependable delivery.</h2>
+        </div>
+        <div class="copy">
+          <p>Halcrest Group LLC is a Virginia-based small business in Charlottesville that provides technology and creative services to government agencies, businesses and organizations. We design and build custom software, websites and mobile apps, and provide IT support. We also offer professional audio, video and music production, including live sound and audiovisual setup for events.</p>
+          <p>Halcrest serves clients through direct contracts and public bids, with a focus on reliable delivery at fair prices. We also take on general services work, so clients can bring a wide range of needs to one responsive partner.</p>
+        </div>
+      </div>
+      <aside class="profile" aria-label="Company profile">
+        <h3>Company profile</h3>
+        <dl>
+          <div><dt>Legal name</dt><dd>Halcrest Group LLC</dd></div>
+          <div><dt>Entity type</dt><dd>Limited liability company</dd></div>
+          <div><dt>State</dt><dd>Virginia</dd></div>
+          <div><dt>Location</dt><dd>Charlottesville, VA</dd></div>
+          <div><dt>Clients</dt><dd>Government, business, organizations</dd></div>
+          <div><dt>Contracting</dt><dd>Direct contracts, public bids</dd></div>
+        </dl>
+      </aside>
+    </div>
+  </section>
+
+  <section id="approach" aria-labelledby="approach-title">
+    <div class="wrap">
+      <div class="head">
+        <p class="eyebrow">How we work</p>
+        <h2 id="approach-title">Clear scope, steady communication, work delivered.</h2>
+      </div>
+      <div class="steps">
+        <div class="step"><h3>Understand</h3><p>We learn your requirements, timeline and constraints before we quote.</p></div>
+        <div class="step"><h3>Plan</h3><p>You get a written scope and a fair, clear price.</p></div>
+        <div class="step"><h3>Deliver</h3><p>We build, produce or install with regular updates along the way.</p></div>
+        <div class="step"><h3>Support</h3><p>We stay available after handoff for fixes, training and next steps.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact" aria-labelledby="contact-title">
+    <div class="wrap">
+      <div class="head">
+        <p class="eyebrow">Contact</p>
+        <h2 id="contact-title">Let's talk about your project.</h2>
+        <p>Request a quote, a capability statement, or a response to your solicitation.</p>
+      </div>
+      <div class="contact-box">
+        <div><span>Company</span><p>Halcrest Group LLC</p></div>
+        <div><span>Location</span><p>Charlottesville, Virginia</p></div>
+        <div><span>Email</span><p><a href="mailto:info@halcrestllc.com">info@halcrestllc.com</a></p></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>&copy; 2026 Halcrest Group LLC. All rights reserved.</p>
+    <p>Charlottesville, Virginia</p>
+  </div>
+</footer>
+</body>
+</html>

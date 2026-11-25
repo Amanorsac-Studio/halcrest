@@ -1,0 +1,15 @@
+{
+  "name": "halcrest",
+  "compatibility_date": "2026-09-01",
+  // Static one-page site. No Worker code; Cloudflare serves ./public.
+  "assets": {
+    "directory": "./public",
+    "not_found_handling": "single-page-application"
+  },
+  "workers_dev": true,
+  // Both names must be zones on this Cloudflare account. Deploying attaches them as custom domains.
+  "routes": [
+    { "pattern": "halcrestllc.com", "custom_domain": true },
+    { "pattern": "www.halcrestllc.com", "custom_domain": true }
+  ]
+}
